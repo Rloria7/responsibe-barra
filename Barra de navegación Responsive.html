@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Barra de navegación <Responsive></Responsive></title>
+    <link rel="stylesheet" href="barra.css">
+  </head>
+  <body>
+<nav>
+  <button class="nav-boton" onclick="accion()">Menu</button>
+  <a href="#" class="nav-enlace desaparece" >inicio</a>
+  <a href="#" class="nav-enlace desaparece">nosotros</a>
+  <a href="#" class="nav-enlace desaparece">servicios</a>
+  <a href="#" class="nav-enlace desaparece">contacto</a>
+</nav>
+
+
+
+<script>
+  function accion(){}
+    console.log('esta funcionando mi boton');
+    var ancla = document.getElementsByClassName('nav-enlace');
+    for(var i= 0; i <ancla.length; 1++){
+      ancla[i].classList.toggle('desaparece');
+    }
+  }
+</script>
+  </body>
+</html>
